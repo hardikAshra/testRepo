@@ -1,1 +1,418 @@
-<p>HELLO THis is html new Updated</p>
+{<html>
+
+<head runat='server'>
+    <title></title>
+    <style>
+        .tbl,
+        .tbl th,
+        .tbl td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id='result' runat='server'>
+        <div class="container">
+        <div style='margin-top: 90px;page-break-after: always;'>
+            <div>
+                <center>
+                    <h3><u>GRADE CARD</u></h3>
+                </center>
+            </div>
+            <table style='width: 100%;'>
+                <tr>
+                    <td style='font-size: 13px;'>NAME</td>
+                    <td style='padding-left: 5px;padding-right: 5px;'>: </td>
+                    <td colspan='4'>
+                        <asp:Label ID='lblname' runat='server' Style='font-weight: bold; font-size: 13px;'>AGRAWAL
+                            PRATHAMESH RISHI</asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style='font-size: 13px;'>EXAMINATION</td>
+                    <td style='padding-left: 5px;padding-right: 5px;'>: </td>
+                    <td colspan='4'>
+                        <asp:Label ID='lblExam' runat='server' Style='font-weight: bold; font-size: 13px; '>SECOND YEAR
+                            ENGINEERING (SEMESTER-III)</asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style='font-size: 13px;'>BRANCH</td>
+                    <td style='padding-left: 5px;padding-right: 5px;'>: </td>
+                    <td colspan='4'>
+                        <asp:Label ID='lblbranch' runat='server' Style='font-weight: bold; font-size: 13px; '>COMPUTER
+                            SCIENCE AND ENGINEERING ( IOT AND CYBER SECURITY INCLUDING BLOCKCHAIN TECHNOLOGY)
+                        </asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style='font-size: 13px;'>HELD IN</td>
+                    <td style='padding-left: 5px;padding-right: 5px;'>: </td>
+                    <td colspan='4'>
+                        <asp:Label ID='lblheldin' runat='server' Style='font-weight: bold; font-size: 13px; '>NOV. /
+                            DEC. 2024 (REGULAR)</asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style='font-size: 13px;'>SEAT NUMBER</td>
+                    <td style='padding-left: 5px;padding-right: 5px;'>: </td>
+                    <td colspan='1'>
+                        <asp:Label ID='lblseat' runat='server' Style='font-weight: bold; font-size: 13px; '>CIC323501
+                        </asp:Label>
+                    </td>
+                    <td style='float: right; font-size: 13px;'>REGISTRATION NO.</td>
+                    <td style='padding-left: 5px;padding-right: 5px;'>:</td>
+                    <td colspan='1'>
+                        <asp:Label ID='lblreg' runat='server' Style='font-weight: bold; font-size: 13px;'>24028001
+                        </asp:Label>
+                    </td>
+                </tr>
+            </table>
+            <table class='tbl' style='border: 1px solid;'>
+                <thead>
+                    <tr>
+                        <th rowspan='2'>COURSE CODE</th>
+                        <th rowspan='2'>COURSE TITLE</th>
+                        <th rowspan='2'>CC</th>
+                        <th rowspan='2'>AM</th>
+                        <th colspan='2'>ESE/PR/OR</th>
+                        <th colspan='2'>IA/TW</th>
+                        <th colspan='2'>TOTAL</th>
+                        <th rowspan='2'>CE</th>
+                        <th rowspan='2'>GR</th>
+                        <th rowspan='2'>GP</th>
+                        <th rowspan='2'>CE *<br />GP</th>
+                        <th rowspan='2' style='display:none'>Rmk</th>
+                    </tr>
+                    <tr>
+                        <th colspan='2'>OBT</th>
+                        <th style='display:none'>Exm
+                        <th colspan='2'>OBT</th>
+                        <th>MIN/<br />MAX</th>
+                        <th>OBT</th>
+                    </tr>
+                </thead>
+                <tbody style='text-align: center;font-size:13px;'>
+                    <tr style='height:40px;'>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>CSC301</td>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>ENGINEERING MATHEMATICS-III</td>
+                        <td>3</td>
+                        <td> ESE IA </td>
+                        <td></td>
+                        <td>69</td>
+                        <td>E</td>
+                        <td></td>
+                        <td>16</td>
+                        <td>E</td>
+                        <td>100</td>
+                        <td>85</td>
+                        <td>3</td>
+                        <td>O</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>E,C</td>
+                    </tr>
+                    <td>1</td>
+                    <td> TW</td>
+                    <td></td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td></td>
+                    <td>19</td>
+                    <td>E</td>
+                    <td>25</td>
+                    <td>19</td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>E,C</td>
+                    </tr>
+                    <tr style='height:40px;'>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=1>CSC302</td>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=1>DISCRETE STRUCTURES & GRAPH THEORY
+                        </td>
+                        <td>3</td>
+                        <td> ESE IA </td>
+                        <td></td>
+                        <td>73</td>
+                        <td>E</td>
+                        <td></td>
+                        <td>17</td>
+                        <td>E</td>
+                        <td>100</td>
+                        <td>90</td>
+                        <td>3</td>
+                        <td>O</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>E,C</td>
+                    </tr>
+                    <tr style='height:40px;'>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>CSC303 & CSL301</td>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>DATA STRUCTURE & LAB.</td>
+                        <td>3</td>
+                        <td> ESE IA </td>
+                        <td></td>
+                        <td>74</td>
+                        <td>E</td>
+                        <td></td>
+                        <td>17</td>
+                        <td>E</td>
+                        <td>100</td>
+                        <td>91</td>
+                        <td>3</td>
+                        <td>O</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>E,C</td>
+                    </tr>
+                    <td>1</td>
+                    <td> PR OR TW</td>
+                    <td></td>
+                    <td>23</td>
+                    <td>E</td>
+                    <td></td>
+                    <td>23</td>
+                    <td>E</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>1</td>
+                    <td>O</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>E,C</td>
+                    </tr>
+                    <tr style='height:40px;'>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>CSC304 & CSL302</td>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>DIGITAL LOGIC & COMPUTER ARCHITECTURE
+                            & LAB.</td>
+                        <td>3</td>
+                        <td> ESE IA </td>
+                        <td></td>
+                        <td>64</td>
+                        <td>E</td>
+                        <td></td>
+                        <td>18</td>
+                        <td>E</td>
+                        <td>100</td>
+                        <td>82</td>
+                        <td>3</td>
+                        <td>O</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>E,C</td>
+                    </tr>
+                    <td>1</td>
+                    <td> TW</td>
+                    <td></td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td></td>
+                    <td>20</td>
+                    <td>E</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>1</td>
+                    <td>O</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>E,C</td>
+                    </tr>
+                    <tr style='height:40px;'>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>CSC305 & CSL303</td>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=2>COMPUTER GRAPHICS & LAB.</td>
+                        <td>3</td>
+                        <td> ESE IA </td>
+                        <td></td>
+                        <td>64</td>
+                        <td>E</td>
+                        <td></td>
+                        <td>16</td>
+                        <td>E</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>3</td>
+                        <td>O</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>E,C</td>
+                    </tr>
+                    <td>1</td>
+                    <td> PR OR TW</td>
+                    <td></td>
+                    <td>23</td>
+                    <td>E</td>
+                    <td></td>
+                    <td>23</td>
+                    <td>E</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>1</td>
+                    <td>O</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>E,C</td>
+                    </tr>
+                    <tr style='height:40px;'>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=1>CSL304</td>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=1>S.B.L.C.- OBJECT ORIENTED PROGRAMMING
+                            WITH JAVA</td>
+                        <td>2</td>
+                        <td> PR OR TW</td>
+                        <td></td>
+                        <td>24</td>
+                        <td>E</td>
+                        <td></td>
+                        <td>46</td>
+                        <td>E</td>
+                        <td>75</td>
+                        <td>70</td>
+                        <td>2</td>
+                        <td>O</td>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>E,C</td>
+                    </tr>
+                    <tr style='height:40px;'>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=1>CSM301</td>
+                        <td style='text-align: left; padding-left: 3px;' rowspan=1>MINI PROJECT - 1 A</td>
+                        <td>2</td>
+                        <td> PR OR TW</td>
+                        <td></td>
+                        <td>24</td>
+                        <td>E</td>
+                        <td></td>
+                        <td>24</td>
+                        <td>E</td>
+                        <td>50</td>
+                        <td>48</td>
+                        <td>2</td>
+                        <td>O</td>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>E,C</td>
+                    </tr>
+                    <tr style='height: 20px;'>
+                        <td colspan='17' style='border: none'>
+                            <table style='width: 100%;'>
+                                <tbody>
+                                    <tr>
+                                        <td style='width: 33%'>Credit : <asp:Label runat='server' ID='lblcredit'>23
+                                            </asp:Label>
+                                        </td>
+                                        <td style='width: 34%'>CG : <asp:Label runat='server' ID='lblcg'>0</asp:Label>
+                                        </td>
+                                        <td style='width: 33%'>SGPI : <asp:Label runat='server' ID='lblsgpi'>- -
+                                            </asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grand Total : <asp:Label runat='server' ID='lblgrandtot'>677/775</asp:Label>
+                                        </td>
+                                        <td>Percentage : <asp:Label runat='server' ID='lblper'>87.35</asp:Label>
+                                        </td>
+                                        <td>Status : <asp:Label runat='server' ID='lbl_fremark'>SUCCESSFUL</asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <td>SGPI : <asp:Label runat='server' ID='lblsgpi'>- -</asp:Label>
+                    </td>
+                    </tr>
+                    <table style='width:100%;margin-top:3px'>
+                        <thead>
+                            <tr>
+                                <th>Semester</th>
+                                <th>Credits</th>
+                                <th>SGPI</th>
+                                <th>Marks</th>
+                                <th>Semester</th>
+                                <th>Credits</th>
+                                <th>SGPI</th>
+                                <th>Marks</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>SEMESTER -I</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>SEMESTER -II</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>SEMESTER -III</td>
+                            <td>23</td>
+                            <td>9.96</td>
+                            <td>677/775</td>
+                            <td>SEMESTER -IV</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>SEMESTER -V</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>SEMESTER -VI</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>SEMESTER -VII</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>SEMESTER -VIII</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <tr style='height: 10px;border-top: 1px solid black'>
+                        <td colspan='17'
+                            style='border: none;text-align:left;font-size:12px;color:black;padding-left:5px;padding-right:5px'>
+                            <asp:Label ID='lblabbr' runat='server'>Abbreviations: CC:Course Credits, AM: Assessment
+                                Method, CE:Credits Earned, GR:Grade, GP:Grade Point, CE * GP:Earned Grade Points,
+                                CG:Cumulative Grade, SGPI:Semester Grade Performance Index, E:Exempted, C:Current
+                                Appearance, X:Past Performance, N:Not Exempted</asp:Label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            <div style='margin-top:10%'>
+                <table style='width: 100%;color:black;font-weight:600'>
+                    <tr>
+                        <td colspan='4' style='font-size: 13px;text-align:center'>Verified By</td>
+                        <td colspan='4' style='font-size: 13px;text-align:center'> Controller of Examination</td>
+                        <td colspan='4' style='font-size: 13px;text-align:center'>Principal</td>
+                    </tr>
+                </table>
+            </div>
+            </table>
+        </div>
+        </div>
+    </form>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js'></script>
+    <script>window.onload = function () { const element = document.querySelector('.container'); const options = { filename: '24028001_result.pdf', format: 'a4', margin: [20, 20, 20, 20], jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }, html2canvas: { scale: 2, logging: true, letterRendering: true } }; html2pdf().from(element).set(options).toPdf().get('pdf').then(function (pdf) { pdf.save('24028001_result.pdf'); }); }</script>
+</body>
+
+</html>}
